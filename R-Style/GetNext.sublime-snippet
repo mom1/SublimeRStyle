@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[GetNext]]></content>
+    <tabTrigger>GetNext</tabTrigger>
+    <scope>source.mac</scope>
+</snippet>

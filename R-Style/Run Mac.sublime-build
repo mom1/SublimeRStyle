@@ -1,0 +1,7 @@
+{
+    "cmd": ["rsinit.exe", "$file_name"],
+    "working_dir": "C:\\Program Files\\R-Style SoftLab\\RS-trunc\\",
+    "selector": "source.mac",
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "shell":true
+}

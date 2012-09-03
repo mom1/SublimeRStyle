@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[GetFirst]]></content>
+    <tabTrigger>GetFirst</tabTrigger>
+    <scope>source.mac</scope>
+</snippet>
