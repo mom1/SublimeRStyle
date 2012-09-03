@@ -9,6 +9,7 @@ Support Language RSL(.mac) for Sublime Text 2
  - Extract to "SublimeAppFolder\Packages\User\"
  - Enjoi
 
+![SublimeRStyle](https://github.com/mom1/SublimeRStyle/blob/master/R-Style/SublimeRStyle.jpg)
 
 Credits
 -------
