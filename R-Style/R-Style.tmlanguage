@@ -140,7 +140,7 @@
 			<key>comment</key>
 			<string>match regular function like: function myFunc(arg) { … }</string>
 			<key>match</key>
-			<string>\b(macro|Macro)\s+([a-zA-Z_$]\w*)?\s*(\()(.*?)(\))</string>
+			<string>(?i)\b(macro|Macro)\s+([a-zA-Z_$]\w*)?\s*(\()(.*?)(\))</string>
 			<key>name</key>
 			<string>meta.function.mac</string>
 		</dict>
@@ -179,61 +179,61 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(bool|Object|class|double|string|cpwin|macro|int|var|(M|m)oney|(F|f)ields|(V|v)alue)\b</string>
+			<string>(?i)\b(bool|Object|class|double|string|cpwin|macro|int|var|(M|m)oney|(F|f)ields|(V|v)alue)\b</string>
 			<key>name</key>
 			<string>storage.type.mac</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(const|export|private|public|static)\b</string>
+			<string>(?i)\b(const|Const|export|private|public|static)\b</string>
 			<key>name</key>
 			<string>storage.modifier.mac</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(break|continue|else|elif|for|if|import|package|return|(W|w)hile|key|keys|(E(nd|ND)|end))\b</string>
+			<string>(?i)\b(break|continue|else|elif|for|if|import|package|return|(W|w)hile|key|keys|(E(nd|ND)|end))\b</string>
 			<key>name</key>
 			<string>keyword.control.mac</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\btrue\b</string>
+			<string>(?i)\btrue\b</string>
 			<key>name</key>
 			<string>constant.language.boolean.true.mac</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\bfalse\b</string>
+			<string>(?i)\bfalse\b</string>
 			<key>name</key>
 			<string>constant.language.boolean.false.mac</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\bnull\b</string>
+			<string>(?i)\bnull\b</string>
 			<key>name</key>
 			<string>constant.language.null.mac</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(super|this)\b</string>
+			<string>(?i)\b(super|this)\b</string>
 			<key>name</key>
 			<string>variable.language.mac</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(debugbreak)\b</string>
+			<string>(?i)\b(debugbreak)\b</string>
 			<key>name</key>
 			<string>keyword.other.mac</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(CoMainLite|CoMain|Array|TArray|TArrayEx|TCollection|Date|Form|Frame|macro|GenObject|Number|Object|Option|Packages|Password|Plugin|Radio|RegExp|Reset|Select|String|Style|Submit|screen|sun|Text|Caption|window|XMLHttpRequest)\b</string>
+			<string>(?i)\b(CoMainLite|CoMain|Array|TArray|TArrayEx|TCollection|Date|Form|Frame|macro|GenObject|Number|Object|Option|Packages|Password|Plugin|Radio|RegExp|Reset|Select|String|Style|Submit|screen|sun|Text|Caption|window|XMLHttpRequest)\b</string>
 			<key>name</key>
 			<string>support.class.mac</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b((O|o)nerror|AbortTrn|Abs|GetD(s|S)|MsgBoxErr|GetFullD(s|S)|GetData|DateToString|FirstDayMonth|MarkRow|LastDayMonth|CmdArgs|DtTm|DtTmSplit|GetComputerName|ParseString|IsValueInList|SimpleIf|DateShift|Datesplit|Double|Exec(Macro|Macro2|MacroFile)|GenClassName|GenEnum|GetDouble|GetInt|GetMoney|GetString|GetStringR|GetTrue|Item|Max|MsgBox|DoubleL|Double|Int|Money|Round|Run|SubObjects|RunError|RunMenu|SelectFile|StrBrk|StrFor|StrLen|StrLwr|StrSet|StrSplit|StrSplit2|StrSubst|StrUpr|SubStr|TEnumArray|TestEvent|Time|Date|TimeSplit|ToANSI|ToOEM|TRecHandler|Trim)\b(?=\()</string>
+			<string>(?i)\b((O|o)nerror|AbortTrn|Abs|GetD(s|S)|MsgBoxErr|GetFullD(s|S)|GetData|DateToString|FirstDayMonth|MarkRow|LastDayMonth|CmdArgs|DtTm|DtTmSplit|GetComputerName|ParseString|IsValueInList|SimpleIf|DateShift|Datesplit|Double|Exec(Macro|Macro2|MacroFile)|GenClassName|GenEnum|GetDouble|GetInt|GetMoney|GetString|GetStringR|GetTrue|Item|Max|MsgBox|DoubleL|Double|Int|Money|Round|Run|SubObjects|RunError|RunMenu|SelectFile|StrBrk|StrFor|StrLen|StrLwr|StrSet|StrSplit|StrSplit2|StrSubst|StrUpr|SubStr|TEnumArray|TestEvent|Time|Date|TimeSplit|ToANSI|ToOEM|TRecHandler|Trim)\b(?=\()</string>
 			<key>name</key>
 			<string>support.function.mac</string>
 		</dict>
@@ -241,13 +241,13 @@
 			<key>comment</key>
 			<string>keyword operators that evaluate to True or False</string>
 			<key>match</key>
-			<string>\b(and|in|is|(N|n)ot|NOT|or)\b</string>
+			<string>(?i)\b(and|in|is|(N|n)ot|NOT|or)\b</string>
 			<key>name</key>
 			<string>keyword.operator.logical.mac</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>%|&amp;|\*|\-\-|\-|\+\+|\+|~|==|=|!=|&lt;=|&gt;=|&lt;&gt;|&lt;|&gt;|!|\|\||\?\:|\*=|/=|%=|\+=|\-=|&amp;=|\^=|\b(normal|append|blob)\b</string>
+			<string>(?i)%|&amp;|\*|\-\-|\-|\+\+|\+|~|==|=|!=|&lt;=|&gt;=|&lt;&gt;|&lt;|&gt;|!|\|\||\?\:|\*=|/=|%=|\+=|\-=|&amp;=|\^=|\b(normal|append|blob)\b</string>
 			<key>name</key>
 			<string>keyword.operator.mac</string>
 		</dict>
