@@ -5,7 +5,7 @@
             "file_patterns": [".mac"],
             "symbol_patterns":
             [
-                "^[\\s\\t]*(class|var|macro)\\s\\w+"
+                "^[\\s\\t]*(class|var|macro)[\\s\\w]+"
             ]
         }       
    }     

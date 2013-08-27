@@ -2,5 +2,5 @@
     <content><![CDATA[IsValueInList(${1:ds}, ${2:NameFields}, ${0:ValFind})]]></content>
     <tabTrigger>IsValueInList</tabTrigger>
     <scope>source.mac</scope>
-    <description>Поиск по значению(Тип определяет сам)</description>
+    <description>РџРѕРёСЃРє РїРѕ Р·РЅР°С‡РµРЅРёСЋ(РўРёРї РѕРїСЂРµРґРµР»СЏРµС‚ СЃР°Рј)</description>
 </snippet>

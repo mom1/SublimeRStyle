@@ -579,5 +579,22 @@
         "Этап процесса",
         "№ инвойса",
         "№ поставщика"
+        ,"GetFirst"
+        ,"GetNext"
+        ,"ValidPosition"
+        ,"GetNext"
+        ,"GetPrev"
+        ,"break;"
+        ,"continue;"
+        ,"CONST"
+        ,"this"
+        ,"Destructor"
+        ,"Print"
+        ,"PrintLn"
+        ,"Message"
+        ,"FlushColumn"
+        ,"ClearColumn"
+        ,"String"
+        ,"Integer"
     ]
 }
