@@ -26,23 +26,51 @@
             <key>name</key>
             <string>keyword.mac</string>
         </dict>
+
+
+
         <dict>
-            <key>captures</key>
+            <key>begin</key>
+            <string>(?i)^\s*(import)\s+</string>
+            <key>beginCaptures</key>
             <dict>
                 <key>1</key>
                 <dict>
                     <key>name</key>
                     <string>keyword.control.import.mac</string>
-                </dict>
-                <key>2</key>
+                </dict>             
+            </dict>
+            <key>end</key>
+            <string>(\;)</string>
+            <key>endCaptures</key>
+            <dict>
+                <key>1</key>
                 <dict>
                     <key>name</key>
-                    <string>keyword.control.import.from.mac</string>
+                    <string>punctuation.definition.end.mac</string>
                 </dict>
             </dict>
-            <key>match</key>
-            <string>(?i)\b(?:(import))\b</string>
+            <key>patterns</key>
+               <array>
+                  <dict>
+                  <key>captures</key>
+                  <dict>
+                      <key>1</key>
+                      <dict>
+                          <key>name</key>
+                          <string>import.file.mac</string>
+                      </dict>
+                  </dict>
+                  <key>match</key>
+                  <string>\b([\w\d\s]*)\s*(,|\b)</string>
+                  </dict>
+                  <dict>
+                      <key>include</key>
+                      <string>$self</string>
+                  </dict>
+               </array>
         </dict>
+
         <dict>
             <key>match</key>
             <string>(?i)\b(Null|NullObj)\b</string>
@@ -191,7 +219,7 @@
             <key>comment</key>
             <string>Процедуры для работы с классами и объектами</string>
             <key>match</key>
-            <string>(?i)\b(CallR2M|ClrRmtOnRelease|GenAttach|GenClassName|GenGetProp|GenNumProps|GenObject|GenPropID|GenRun|GenSetProp|GetNamedChanel|IsEqClass|R2M)\b</string>
+            <string>(?i)\b(CallR2M|record|ClrRmtOnRelease|GenAttach|GenClassName|GenGetProp|GenNumProps|GenObject|GenPropID|GenRun|GenSetProp|GetNamedChanel|IsEqClass|R2M)\b</string>
             <key>name</key>
             <string>support.function.calssobj.mac</string>
         </dict>
