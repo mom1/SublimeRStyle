@@ -453,6 +453,10 @@
                         </dict>
                     </array>
                 </dict>
+                <dict>
+                    <key>include</key>
+                    <string>$self</string>
+                </dict>
             </array>
         </dict>
 <!--                       Var                            -->
@@ -554,6 +558,12 @@
                 <dict>
                     <key>match</key>
                     <string>(`)</string>
+                    <key>name</key>
+                    <string>string.quoted.double.single-line.raw.mac</string>
+                </dict>
+                <dict>
+                    <key>match</key>
+                    <string>(')</string>
                     <key>name</key>
                     <string>string.quoted.double.single-line.raw.mac</string>
                 </dict>
