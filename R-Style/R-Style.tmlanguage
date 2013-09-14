@@ -26,9 +26,6 @@
             <key>name</key>
             <string>keyword.mac</string>
         </dict>
-
-
-
         <dict>
             <key>begin</key>
             <string>(?i)^\s*(import)\s+</string>
@@ -70,7 +67,6 @@
                   </dict>
                </array>
         </dict>
-
         <dict>
             <key>match</key>
             <string>(?i)\b(Null|NullObj)\b</string>
@@ -362,6 +358,10 @@
                             <string>([А-Яа-яa-zA-Z_][А-Яа-яa-zA-Z_0-9]*)\s*(([:]\s*(\w*))|([,]))?</string>
                         </dict>
                     </array>
+                </dict>
+                <dict>
+                    <key>include</key>
+                    <string>$self</string>
                 </dict>
             </array>
         </dict>
