@@ -1,7 +1,24 @@
 {
-    "cmd": ["rsinit.exe", "$file_name"],
-    "working_dir": ".",
     "selector": "source.mac",
-    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-    "shell":true
+    "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+    "cmd": [ "echo", "Error: RSL build not supported for this OS." ],
+    "working_dir": "$project_path/RepCode/trunk",
+    "variants":
+    [
+        {
+            "name": "Run Mac with rsldebug",
+            "windows":
+            {
+                "cmd": ["RSInit.exe", "$file_name", "-rsldebug"]
+            }
+        },
+        {
+            "name": "Run Mac",
+            "windows":
+            {
+                "cmd": ["RSInit.exe", "$file_name"]
+            }
+        }
+        
+    ]
 }
