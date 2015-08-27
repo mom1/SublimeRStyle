@@ -1,0 +1,33 @@
+{
+    "selector": "source.mac",
+    // "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+    "name": "Client with rsldebug",
+    "cmd": ["RSInit.exe", "-client", "-rsldebug"],
+    "shell": true,
+    "working_dir": "$project_path/RepCode/trunk",
+    "variants":
+    [
+    //RPCserv.exe -c -cfg RPCServ.exe.rsconfig
+        {
+            "name": "Server console",
+            "windows":
+            {
+                "cmd": ["start", "RPCserv.exe", "-c", "-cfg", "RPCServ.exe.rsconfig"]
+            }
+        },
+        {
+            "name": "Client NO rsldebug",
+            "windows":
+            {
+                "cmd": ["RSInit.exe", "-client"]
+            }
+        },
+        {
+            "name": "Mac with rsldebug",
+            "windows":
+            {
+                "cmd": ["RSInit.exe", "$file_name", "-rsldebug"]
+            }
+        }
+    ]
+}

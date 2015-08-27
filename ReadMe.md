@@ -1,7 +1,7 @@
 SublimeRStyle
 =====
 
-Support Language RSL(.mac) for Sublime Text 2
+Support Language RSL(.mac) for Sublime Text 2/3
 
 **Installation :**
 
