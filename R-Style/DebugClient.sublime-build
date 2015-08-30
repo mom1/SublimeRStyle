@@ -1,7 +1,6 @@
 {
     "selector": "source.mac",
     // "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
-    "name": "Client with rsldebug",
     "cmd": ["RSInit.exe", "-client", "-rsldebug"],
     "shell": true,
     "working_dir": "$project_path/RepCode/trunk",
