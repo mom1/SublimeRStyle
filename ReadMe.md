@@ -22,8 +22,8 @@ Support Language RSL(.mac) for Sublime Text 2/3
 
  * [rstylelint](https://github.com/mom1/SublimeLinter-contrib-rstylelint)
     * Check and highlight syntax errors
-Credits
--------
 
+Credits
+-----
 [MOM](https://github.com/mom1)
 
